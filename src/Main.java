@@ -1,3 +1,6 @@
+
+
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -12,7 +15,7 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {	
-			SplitPane root = (SplitPane) FXMLLoader.load(getClass().getResource("Ass4FXML.fxml"));
+			SplitPane root = (SplitPane) FXMLLoader.load(getClass().getResource(URLHandler.getResource("Ass4FXML.fxml")));
 			Scene scene = new Scene(root,900,600);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Roman Candle Simulation Version 1.9");

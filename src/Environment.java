@@ -1,3 +1,6 @@
+
+
+
 /**
  * Contains all the information about the environment in which the Roman Candle is being fired.
  * This consists of the wind velocity, the air density and gravity constants.
