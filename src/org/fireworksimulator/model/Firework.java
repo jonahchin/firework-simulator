@@ -1,3 +1,7 @@
+package org.fireworksimulator.model;
+
+
+
 /**
  * A base class for all Emitter and Particle objects.  This class holds position and
  * lifetime data.

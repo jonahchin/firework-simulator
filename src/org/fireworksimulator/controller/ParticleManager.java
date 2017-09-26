@@ -1,4 +1,18 @@
+package org.fireworksimulator.controller;
+
+
+
 import java.util.ArrayList;
+
+import org.fireworksimulator.model.BurningParticle;
+import org.fireworksimulator.model.Emitter;
+import org.fireworksimulator.model.Environment;
+import org.fireworksimulator.model.MobileEmitter;
+import org.fireworksimulator.model.Particle;
+import org.fireworksimulator.model.Streak;
+import org.fireworksimulator.util.EmitterException;
+import org.fireworksimulator.util.EnvironmentException;
+
 import javafx.scene.paint.Color;
 
 /**

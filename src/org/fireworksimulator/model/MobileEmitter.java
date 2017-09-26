@@ -1,4 +1,10 @@
+package org.fireworksimulator.model;
+
+
+
 import java.util.ArrayList;
+
+import org.fireworksimulator.util.EmitterException;
 
 /**
  * An emitter that is linked to a Particle, so that it moves with the Particle.

@@ -1,7 +1,18 @@
+package org.fireworksimulator.controller;
+
+
+
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+
+import org.fireworksimulator.model.BurningParticle;
+import org.fireworksimulator.model.Particle;
+import org.fireworksimulator.model.Streak;
+import org.fireworksimulator.util.EmitterException;
+import org.fireworksimulator.util.EnvironmentException;
+import org.fireworksimulator.util.URLHandler;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -48,8 +59,8 @@ public class MyController {
 
     private double startingTime;
     ParticleManager manager = null;
-    //setting up sound file
-    AudioClip noise = new AudioClip(new File("launchSound.mp3").toURI().toString());
+    //setting up sound file (src/package/res/sound.mp3)
+    AudioClip noise = new AudioClip(new File(URLHandler.projectPath + URLHandler.getResource("launchSound.mp3")).toURI().toString());
 
     //Time line initialization
 	Timeline timeline = new Timeline(
@@ -69,7 +80,8 @@ public class MyController {
         angleSlider.valueProperty().addListener((observable, oldVal, newVal) -> angleLabel.setText("Angle (Degrees): " + String.format("%.2f", newVal.doubleValue()))); //adjust slider labels to show value
         windSlider.valueProperty().addListener((observable, oldVal, newVal) -> windLabel.setText("Wind Velocity (Km/h): " + String.format("%.2f", newVal.doubleValue())));
         GraphicsContext gc2 = backCanvas.getGraphicsContext2D(); //backCanvas is only used to display background image
-        gc2.drawImage(new Image("background.png"), 0, 0);
+        // setting up image file (package/res/image.png)
+        gc2.drawImage(new Image(URLHandler.packagePath + URLHandler.getResource("background.png")), 0, 0);
     } //end initialize
 
     @FXML

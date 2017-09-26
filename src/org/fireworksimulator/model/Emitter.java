@@ -1,4 +1,10 @@
+package org.fireworksimulator.model;
+
+
+
 import java.util.ArrayList;
+
+import org.fireworksimulator.util.EmitterException;
 
 /**
  * The base class for Emitter objects.

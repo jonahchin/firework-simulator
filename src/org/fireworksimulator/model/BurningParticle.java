@@ -1,3 +1,8 @@
+package org.fireworksimulator.model;
+
+
+
+
 import javafx.scene.paint.Color;
 
 /**

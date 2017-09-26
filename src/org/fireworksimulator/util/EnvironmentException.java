@@ -1,8 +1,13 @@
+package org.fireworksimulator.util;
+
+
+
 /**
  * An exception used by the Environment class.
  * @author Jonah Chin
  * @version 1.0
  */
+@SuppressWarnings("serial")
 public class EnvironmentException extends Exception {
 
 	/**
