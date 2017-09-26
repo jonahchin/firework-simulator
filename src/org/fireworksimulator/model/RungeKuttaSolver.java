@@ -1,5 +1,4 @@
-
-
+package org.fireworksimulator.model;
 
 /**
  * A class used to solve any size system of ordinary differential equations.

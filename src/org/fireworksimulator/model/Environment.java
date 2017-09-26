@@ -1,5 +1,6 @@
+package org.fireworksimulator.model;
 
-
+import org.fireworksimulator.util.EnvironmentException;
 
 /**
  * Contains all the information about the environment in which the Roman Candle is being fired.
